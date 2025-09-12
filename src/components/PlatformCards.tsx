@@ -12,12 +12,29 @@ import demoVideoIcon from "@/assets/demo-video-icon.png";
 const PlatformCards = () => {
   const platforms = [
     {
+      title: "🎥 Demo Video",
+      description: "Complete walkthrough of the JanBandhu ecosystem",
+      icon: demoVideoIcon,
+      buttons: [
+        { label: "Watch", link:"youtube.com", icon: Play, variant: "default" as const }
+      ],
+      featured: true
+    },
+    {
+      title: "💻 Authority Dashboard",
+      description: "Monitor and track all civic issues across regions",
+      icon: dashboardIcon,
+      buttons: [
+        { label: "Launch", link:"https://janbandhu-authority-portal.vercel.app/", icon: ExternalLink, variant: "default" as const }
+      ],
+      featured: false
+    },
+    {
       title: "📱 Citizen App",
       description: "Report civic issues with voice support and real-time tracking",
       icon: citizenAppIcon,
       buttons: [
-        { label: "Preview", icon: ExternalLink, variant: "outline" as const },
-        { label: "Download", icon: Download, variant: "default" as const }
+        { label: "Preview", link:"youtube.com", icon: ExternalLink, variant: "default" as const }
       ],
       featured: false
     },
@@ -26,43 +43,24 @@ const PlatformCards = () => {
       description: "Manage and resolve civic issues with geo-tagged proof",
       icon: resolverAppIcon,
       buttons: [
-        { label: "Preview", icon: ExternalLink, variant: "outline" as const },
-        { label: "Download", icon: Download, variant: "default" as const }
+        { label: "Preview", link:"youtube.com", icon: ExternalLink, variant: "default" as const }
       ],
       featured: false
     },
     {
-      title: "💻 Authority Dashboard",
-      description: "Monitor and track all civic issues across regions",
-      icon: dashboardIcon,
-      buttons: [
-        { label: "Launch", icon: ExternalLink, variant: "default" as const }
-      ],
-      featured: false
-    },
-    {
-      title: "🌍 Press Transparency Panel",
+      title: "🌍 Public Transparency Panel",
       description: "Public dashboard for transparent civic issue tracking",
       icon: pressPanelIcon,
       buttons: [
-        { label: "Launch", icon: ExternalLink, variant: "default" as const }
+        { label: "Launch", link:"youtube.com", icon: ExternalLink, variant: "default" as const }
       ],
       featured: false
-    },
-    {
-      title: "🎥 Demo Video",
-      description: "Complete walkthrough of the JanBandhu ecosystem",
-      icon: demoVideoIcon,
-      buttons: [
-        { label: "Watch", icon: Play, variant: "default" as const }
-      ],
-      featured: true
     }
   ];
 
-  const handleButtonClick = (label: string) => {
+  const handleButtonClick = (label: string, link: string) => {
     // Dummy links for now
-    window.open("https://youtube.com", "_blank");
+    window.open(link);
   };
 
   return (
@@ -100,7 +98,7 @@ const PlatformCards = () => {
                       variant={button.variant}
                       size="sm"
                       className={`w-full ${platform.featured ? 'btn-demo' : ''} group-hover:scale-105 transition-transform`}
-                      onClick={() => handleButtonClick(button.label)}
+                      onClick={() => handleButtonClick(button.label, button.link)}
                     >
                       <button.icon className="mr-2 h-4 w-4" />
                       {button.label}

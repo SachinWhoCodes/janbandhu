@@ -12,11 +12,11 @@ import demoVideoIcon from "@/assets/demo-video-icon.png";
 const PlatformCards = () => {
   const platforms = [
     {
-      title: "🎥 Demo Video",
-      description: "Complete walkthrough of the JanBandhu ecosystem",
+      title: "Janbandhu APIs",
+      description: "Complete walkthrough of the JanBandhu APIs",
       icon: demoVideoIcon,
       buttons: [
-        { label: "Watch", link:"youtube.com", icon: Play, variant: "default" as const }
+        { label: "Watch", link:"https://janbandhu-api.vercel.app", icon: Play, variant: "default" as const }
       ],
       featured: true
     },

@@ -52,7 +52,7 @@ const PlatformCards = () => {
       description: "Public dashboard for transparent civic issue tracking",
       icon: pressPanelIcon,
       buttons: [
-        { label: "Launch", link:"youtube.com", icon: ExternalLink, variant: "default" as const }
+        { label: "Launch", link:"https://janbandhu-press.vercel.app/", icon: ExternalLink, variant: "default" as const }
       ],
       featured: false
     }

@@ -16,7 +16,7 @@ const PlatformCards = () => {
       description: "Complete walkthrough of the JanBandhu APIs",
       icon: demoVideoIcon,
       buttons: [
-        { label: "Watch", link:"https://janbadhu-api.vercel.app/", icon: Play, variant: "default" as const }
+        { label: "Docs", link:"https://janbadhu-api.vercel.app/", icon: Play, variant: "default" as const }
       ],
       featured: true
     },

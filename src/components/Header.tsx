@@ -25,7 +25,7 @@ const Header = () => {
             </div>
             <div>
               <h1 className="text-2xl font-bold gradient-text">JanBandhu</h1>
-              <p className="text-sm text-muted-foreground">Crowdsourced Civic Reporting System</p>
+              <p className="text-sm text-muted-foreground">View Demos of all our Interfaces</p>
             </div>
           </div>
 

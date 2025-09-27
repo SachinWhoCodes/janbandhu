@@ -13,19 +13,28 @@ const PlatformCards = () => {
   const platforms = [
     {
       title: "Janbandhu APIs",
-      description: "Complete walkthrough of the JanBandhu APIs",
+      description: "For integration with existing  govt services",
       icon: demoVideoIcon,
       buttons: [
-        { label: "Docs", link:"https://janbadhu-api.vercel.app/", icon: Play, variant: "default" as const }
+        { label: "Docs", link:"https://janbadhu-api.vercel.app/", icon: ExternalLink, variant: "default" as const }
       ],
-      featured: true
+      featured: false
     },
     {
       title: "💻 Authority Dashboard",
-      description: "Monitor and track all civic issues across regions",
+      description: "To monitor and track all civic issues across regions",
       icon: dashboardIcon,
       buttons: [
         { label: "Launch", link:"https://janbandhu-authority-portal.vercel.app/", icon: ExternalLink, variant: "default" as const }
+      ],
+      featured: false
+    },
+    {
+      title: "🌍 Public Transparency Panel",
+      description: "Public dashboard for transparent civic issue tracking",
+      icon: pressPanelIcon,
+      buttons: [
+        { label: "Launch", link:"https://janbandhu-press.vercel.app/", icon: ExternalLink, variant: "default" as const }
       ],
       featured: false
     },
@@ -44,15 +53,6 @@ const PlatformCards = () => {
       icon: resolverAppIcon,
       buttons: [
         { label: "Preview", link:"youtube.com", icon: ExternalLink, variant: "default" as const }
-      ],
-      featured: false
-    },
-    {
-      title: "🌍 Public Transparency Panel",
-      description: "Public dashboard for transparent civic issue tracking",
-      icon: pressPanelIcon,
-      buttons: [
-        { label: "Launch", link:"https://janbandhu-press.vercel.app/", icon: ExternalLink, variant: "default" as const }
       ],
       featured: false
     }

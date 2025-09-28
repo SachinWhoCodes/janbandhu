@@ -43,7 +43,7 @@ const PlatformCards = () => {
       description: "Report civic issues with voice support and real-time tracking",
       icon: citizenAppIcon,
       buttons: [
-        { label: "Preview", link:"youtube.com", icon: ExternalLink, variant: "default" as const }
+        { label: "Preview", link:"https://github.com/SachinWhoCodes/janbandhu-citizen-app", icon: ExternalLink, variant: "default" as const }
       ],
       featured: false
     },
@@ -52,7 +52,7 @@ const PlatformCards = () => {
       description: "Manage and resolve civic issues with geo-tagged proof",
       icon: resolverAppIcon,
       buttons: [
-        { label: "Preview", link:"youtube.com", icon: ExternalLink, variant: "default" as const }
+        { label: "Preview", link:"https://github.com/SachinWhoCodes/janbandhu-field-worker-app", icon: ExternalLink, variant: "default" as const }
       ],
       featured: false
     }
